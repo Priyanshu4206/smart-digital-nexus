@@ -1,6 +1,5 @@
-
 import { useEffect } from 'react';
-import { Clock, CloudComputing, LucideIcon, Target, Code, Smartphone, Brain } from 'lucide-react';
+import { Clock, Database, LucideIcon, Target, Code, Smartphone, Brain } from 'lucide-react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import Button from '../components/ui/Button';
@@ -26,7 +25,7 @@ const Value: React.FC<ValueProps> = ({ icon: Icon, title, description }) => {
 
 const upcomingProducts = [
   {
-    icon: <CloudComputing size={40} className="text-accent" />,
+    icon: <Database size={40} className="text-accent" />,
     title: 'Backup Maker Service',
     description: 'A secure, automated backup solution for businesses of all sizes. Keep your data safe with scheduled backups, encryption, and easy restoration.',
     status: 'In Development'

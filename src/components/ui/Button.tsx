@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'default' | 'secondary' | 'outline' | 'ghost' | 'link' | 'primary';
-  size?: 'default' | 'sm' | 'lg' | 'icon' | 'xl';
+  size?: 'default' | 'sm' | 'lg' | 'icon';
   to?: string;
   children: React.ReactNode;
   className?: string;

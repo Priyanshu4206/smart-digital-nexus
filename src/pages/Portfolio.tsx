@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Navbar from '../components/layout/Navbar';
@@ -172,10 +171,9 @@ const Portfolio = () => {
               {testimonials.map((testimonial, index) => (
                 <Card 
                   key={index} 
-                  className="opacity-0 animate-fade-up"
-                  style={{ animationDelay: `${index * 200}ms` }}
+                  className={`opacity-0 animate-fade-up`}
                 >
-                  <CardContent className="pt-6">
+                  <CardContent className={`pt-6`} style={{ animationDelay: `${index * 200}ms` }}>
                     <div className="flex items-center mb-4">
                       <img 
                         src={testimonial.avatar} 
