@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Healthily from '../assets/portfolio/Healthily.jpg'
 import EmpathyAi from '../assets/portfolio/empathyAi.png'
 import Flex from '../assets/portfolio/flex.png'
+import Pai from '../assets/portfolio/pai.png'
 import Avinash from '../assets/portfolio/team/Avinash.jpg'
 import Himanshu from '../assets/portfolio/team/Himanshu Sharma.png'
 import Mitesh from '../assets/portfolio/team/Mitesh Dixit.jpg'
@@ -45,7 +47,7 @@ const portfolioItems = [
       'Hugging Face',
       'Theme Toggle',
     ],
-    image: EmpathyAi,
+    image: Pai,
   },
   {
     title: "Pai Lab Design Company's Website",
@@ -74,7 +76,7 @@ const portfolioItems = [
       'AI Chatbot',
       'Google Speech-to-Text API',
     ],
-    image: EmpathyAi,
+    image: Healthily,
   },
 ]
 
