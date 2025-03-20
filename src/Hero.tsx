@@ -1,6 +1,5 @@
-import { Button, Button2 } from '@/components/ui/button'
-import HeroImage from '../../assets/hero/hero.jpg'
-import { Link } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
+import HeroImage from '../assest/hero/hero-image.jpg'
 const Hero = () => {
   return (
     <section className='relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-0'>
@@ -13,14 +12,14 @@ const Hero = () => {
       <div className='container max-w-7xl mx-auto px-6 md:px-10'>
         <div className='grid md:grid-cols-2 gap-12 md:gap-16 items-center'>
           <div className='order-2 md:order-1'>
-            <span className='inline-block text-sm font-medium tracking-widest px-3 py-1 bg-primary2/10 text-primary2 rounded-full mb-6 opacity-0 animate-fade-in'>
+            <span className='inline-block text-sm font-medium tracking-widest px-3 py-1 bg-primary/10 text-primary rounded-full mb-6 opacity-0 animate-fade-in'>
               INNOVATIVE FREELANCE SOLUTIONS
             </span>
 
             <h1 className='font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance leading-tight mb-6 opacity-0 animate-fade-in-delay-1'>
               Transforming Ideas into
               <br />
-              <span className='text-primary2'>Digital Excellence</span>
+              <span className='text-primary'>Digital Excellence</span>
             </h1>
 
             <p className='text-lg md:text-xl leading-relaxed text-muted-foreground mb-8 max-w-md opacity-0 animate-fade-in-delay-2'>
@@ -30,20 +29,16 @@ const Hero = () => {
             </p>
 
             <div className='flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-delay-3'>
-              <Button
-                variant='default'
-                className='rounded-full text-base px-8 py-6'
-                size='lg'
-              >
-                <Link to='/contact'>Get Started</Link>
+              <Button variant='default' className='rounded-full text-base px-8 py-6' size='lg'>
+                Get Started
               </Button>
-              <Button2
+              <Button
                 variant='outline'
                 className='rounded-full text-base px-8 py-6'
                 size='lg'
               >
-                <Link to='/portfolio'>Learn More</Link>
-              </Button2>
+                Learn More
+              </Button>
             </div>
           </div>
 
@@ -59,15 +54,18 @@ const Hero = () => {
             </div>
 
             {/* Decorative elements */}
-            <div className='absolute -top-3 -left-3 w-20 h-20 border-2 border-primary2 rounded-lg -z-10 animate-float'></div>
-            <div className='absolute -bottom-3 -right-3 w-20 h-20 border-2 border-primary2 rounded-lg -z-10 animate-float'></div>
+            <div className='absolute -top-3 -left-3 w-20 h-20 border-2 border-primary rounded-lg -z-10 animate-float'></div>
+            <div
+              className='absolute -bottom-3 -right-3 w-20 h-20 border-2 border-primary rounded-lg -z-10 animate-float'
+              style={{ animationDelay: '2s' }}
+            ></div>
           </div>
         </div>
 
         {/* Scroll indicator */}
         {/* <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-in-delay-4">
           <span className="text-sm font-medium text-muted-foreground">Scroll to explore</span>
-          <ArrowDown className="w-5 h-5 text-primary2 animate-bounce" />
+          <ArrowDown className="w-5 h-5 text-primary animate-bounce" />
         </div> */}
       </div>
     </section>
