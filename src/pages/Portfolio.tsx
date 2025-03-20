@@ -47,7 +47,7 @@ const portfolioItems = [
       'Hugging Face',
       'Theme Toggle',
     ],
-    image: Pai,
+    image: EmpathyAi,
   },
   {
     title: "Pai Lab Design Company's Website",
@@ -59,7 +59,7 @@ const portfolioItems = [
       'Responsive Design',
       'Framer Motion (Animations)',
     ],
-    image: EmpathyAi,
+    image: Pai,
   },
   {
     title: 'Healthily | First Aid Recommendation System',
@@ -242,12 +242,11 @@ const Portfolio = () => {
                   onMouseEnter={() => setHoveredMember(index)}
                   onMouseLeave={() => setHoveredMember(null)}
                 >
-                  <div className='relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105'>
+                  <div className='relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-500'>
                     {/* Colored overlay for image */}
                     <div
-                      className={`absolute inset-0 bg-gradient-to-t from-black/40 via-black/80 to-transparent z-10 transition-opacity duration-500 ${
-                        hoveredMember === index ? 'opacity-100' : 'opacity-70'
-                      }`}
+                      className={`absolute inset-0 bg-gradient-to-t from-black/40 via-black/80 to-transparent z-10 transition-opacity duration-500 ${hoveredMember === index ? 'opacity-100' : 'opacity-70'
+                        }`}
                     ></div>
 
                     {/* Member image */}
@@ -270,22 +269,20 @@ const Portfolio = () => {
 
                         {/* Bio text - only visible on hover */}
                         <p
-                          className={`text-gray-300 text-sm mb-4 transition-all duration-500 ${
-                            hoveredMember === index
-                              ? 'opacity-100 max-h-32'
-                              : 'opacity-0 max-h-0 overflow-hidden'
-                          }`}
+                          className={`text-gray-300 text-sm mb-4 transition-all duration-500 ${hoveredMember === index
+                            ? 'opacity-100 max-h-32'
+                            : 'opacity-0 max-h-0 overflow-hidden'
+                            }`}
                         >
                           {teamMember.bio}
                         </p>
 
                         {/* Social links */}
                         <div
-                          className={`flex space-x-3 transition-all duration-500 ${
-                            hoveredMember === index
-                              ? 'opacity-100'
-                              : 'opacity-0'
-                          }`}
+                          className={`flex space-x-3 transition-all duration-500 ${hoveredMember === index
+                            ? 'opacity-100'
+                            : 'opacity-0'
+                            }`}
                         >
                           {teamMember.social?.linkedin && (
                             <a

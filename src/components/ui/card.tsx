@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
       className={cn(
         'rounded-2xl overflow-hidden',
         hoverable &&
-          'transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg',
+        'transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg',
         glassEffect ? 'glass' : 'bg-white border border-border shadow-sm',
         className
       )}
